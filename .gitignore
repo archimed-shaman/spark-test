@@ -1,0 +1,5 @@
+.ensime
+.ensime_cache
+target
+src/main/scala/com/semrush/data/processor.scala
+src/main/scala/com/semrush/data/session.scala
