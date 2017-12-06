@@ -43,6 +43,11 @@ Clickstream - это набор событий (events) и переходов р
 
 В задании использован подход TDD. Реализован класс эвента в `src/main/scala/com/semrush/data/event.scala`. Реализован unit тест в `src/test/scala/com/semrush/session_test.scala`. Нужно написать код, с которым unit-тесты начнут успешно выполняться. Исходные данные в тесте представлены в виде набора JSON строк, которые нужно десериализовать и промаркировать идентификатором сессии.
 
+Прототип функции:
+```
+def apply(rawRDD: org.apache.spark.rdd.RDD[String]): org.apache.spark.rdd.RDD[com.semrush.data.event]
+```
+
 Идентификатор сессии генерируется функцией makeSid.
 ```
 def makeSid(uid: String, domain: String, startStamp: java.util.Date) : String = startStamp.getTime.toString + (uid, domain).hashCode
