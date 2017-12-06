@@ -18,6 +18,5 @@ case class event(
 ) extends Serializable
 
 object event {
-  def makeSid(uid: String, domain: String, startStamp: java.util.Date) = startStamp.getTime.toString + (uid, domain).hashCode
-
+  def makeSid(uid: String, domain: String, startStamp: java.util.Date) : String = startStamp.getTime.toString + (uid, domain).hashCode
 }
