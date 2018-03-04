@@ -62,7 +62,7 @@ class data_processor_test extends FlatSpec {
       server_stamp = new Timestamp(1506816311000L),
       client_stamp = new Timestamp(1506816191913L),
       url = """https://www.panynj.gov/airports/ewr-to-from.html""",
-      domain = "panyj.gov",
+      domain = "panynj.gov",
       referer = Some[String]("""https://www.google.ca/"""),
       referer_domain = Some[String]("google.ca"),
       status_code = 200,
@@ -70,7 +70,7 @@ class data_processor_test extends FlatSpec {
       browser = "Chrome",
       operating_system = "Windows8.1",
       uid = "f7ba9b9aacd447ecc0b4d59de22ff76d",
-      sid = data.event.makeSid("f7ba9b9aacd447ecc0b4d59de22ff76d", "panyj.gov", new Timestamp(1506816191913L))
+      sid = data.event.makeSid("f7ba9b9aacd447ecc0b4d59de22ff76d", "panynj.gov", new Timestamp(1506816191913L))
     ),
     // *** SESSION ***
     event(
